@@ -14,17 +14,17 @@ export const reducer = (state=initialState, action) => {
         case ADD_SUCCESS_HINT:
             return {
                 ...state,
-                hintsData: [...state.hintsData, {id: 0, title: "Success"} ]
+                hintsData: [...state.hintsData, {id: 0, color: "green", title: "Success"} ]
             }
         case ADD_WARNING_HINT:
             return {
                 ...state,
-                hintsData: [...state.hintsData, {id: 1, title: "Warning"} ]
+                hintsData: [...state.hintsData, {id: 1, color:"orange", title: "Warning"} ]
             }
         case ADD_ERROR_HINT:
             return {
                 ...state,
-                hintsData: [...state.hintsData, {id: 2, title: "Error"} ]
+                hintsData: [...state.hintsData, {id: 2, color:"red", title: "Error"} ]
             }
     }
 
